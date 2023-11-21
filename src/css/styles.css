@@ -1,0 +1,50 @@
+::selection {
+    background-color: var(--background);
+    color: #fff;
+    text-shadow: none;
+}
+
+html { font-size: 1vw; }
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+    color: white;
+    
+}
+  
+.o-page {
+    padding-top: 123px;
+    font-family: Silkscreen, Arial, Helvetica, sans-serif;
+    width: 80%; margin: 0 auto;
+}
+
+o-layout { margin: 0 auto; }
+
+.o-layout_item { width: 49%; }
+.o-layout_item img { width: 100%; }
+.o-layout_item p { 
+    font-size: 2.5rem;
+    line-height: 1.34;
+    text-align: right;
+}
+
+p.o-text { 
+    text-align: left;
+}
+
+.o-background { background-color: var(--primary-color); height: 129px; }
+
+.o-header { display: inline-block; }
+.o-title {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 25px 0;
+}
+
+@media (max-width: 699px) {
+    .o-page {
+        width: 90%;
+    }
+}

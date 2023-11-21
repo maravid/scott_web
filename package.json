@@ -1,0 +1,19 @@
+{
+  "name": "pec1",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "browserslist": "> 0.2% and not dead",
+  "description": "",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "maravid <maravid@uoc.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "latest",
+    "postcss-import": "^15.1.0",
+    "posthtml-include": "^1.7.4"
+  }
+}

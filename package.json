@@ -8,7 +8,7 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build --public-url /docs/ --dist-dir docs src/index.html",
+    "parcel:build": "parcel build --public-url /scott_web/ src/index.html",
     "clean": "rimraf dist .parcel-cache"
   },
   "keywords": [],

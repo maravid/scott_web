@@ -19,6 +19,8 @@
 
 .c-header_nav { margin: 0 auto; }
 
+.c-header_nav a { padding: 0 0 12px; }
+
 .c-header_container {
     display: flex;
     justify-content: space-between;
@@ -44,4 +46,9 @@
         text-align: right;
     }
     .c-header_nav { margin: 0 25px 0 0; }
+
+    .c-header_nav a {
+        padding: 0px 0 5px;
+        margin: 0 0 10px;
+      }
 }

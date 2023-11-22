@@ -12,11 +12,13 @@ body {
     color: white;
     
 }
-  
+
+/*** index.html ***/
+
 .o-page {
     padding-top: 123px;
     font-family: Silkscreen, Arial, Helvetica, sans-serif;
-    width: 80%; margin: 0 auto;
+    width: 80%; margin: 0 auto 40px;
 }
 
 o-layout { margin: 0 auto; }
@@ -43,8 +45,129 @@ p.o-text {
     padding: 25px 0;
 }
 
+.o-page .o-figure {
+    margin: 0 auto;
+    width: 540px;
+}
+
+.o-page .o-figure figcaption { text-align: center; padding: 15px 0; }
+
 @media (max-width: 699px) {
     .o-page {
         width: 90%;
     }
 }
+
+/*** enlaces.html ***/
+
+.l-header {
+    font-size: 3rem;
+    padding: 40px 0 20px;
+}
+
+.l-link-item {
+    padding: 20px 0;
+}
+
+.l-link-item h2 { font-size: 1.5em; padding: 0 0 10px; }
+.l-link-item a {
+    padding: 0 0 10px; 
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.l-link-item p {
+    line-height: 1.2;
+}
+
+.l-link-item:nth-child(odd) { text-align: right; }
+.l-link-item:nth-child(odd) a { color: var(--primary-color); }
+
+.l-link-item a:hover { color:#fff; }
+
+.l-text { display: inline-block; width: 75%; }
+
+
+/*** categorias.html ***/
+
+#categories, #links { width: 90%; }
+
+#categories section { padding: 0 0 30px; }
+
+.e-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.episode {
+    margin: 6px;
+    max-width: 100%;
+}
+
+.e-thumbnail { margin: 0; position: relative; }
+.e-thumbnail img { width: 100%; }
+
+.e-thumbnail-gradient {
+    background-image: linear-gradient(0deg, #181818cc 5%, #0000 95%);
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -0.5px;
+}
+
+.e-data .e-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.e-runtime {
+    color: #a3a3a3;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.e-synopsis {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-family: Silkscreen, Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+
+#categories h2 {
+    font-size: 30px;
+    line-height: 65px;
+}
+
+section#voices .v-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+@media (max-width: 1439px) {
+    .e-container {
+        grid-template-columns: 33.333% 33.333% 33.333%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .e-container {
+      grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 599px) {
+    .e-container {
+      grid-template-columns: 100%;
+    }
+  }
+
+.f-container, .f-item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.f-thumbnail { width: 250px; }
+.f-thumbnail img { width: 100%; }
+

@@ -1,2 +1,1 @@
-const name = 'world';
-console.log(`Hello ${name}`);
+import 'hover.css/css/hover-min.css';

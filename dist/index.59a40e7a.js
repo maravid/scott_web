@@ -575,9 +575,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8lRBv":[function(require,module,exports) {
-const name = "world";
-console.log(`Hello ${name}`);
+var _hoverMinCss = require("hover.css/css/hover-min.css");
 
-},{}]},["gl6Mp","8lRBv"], "8lRBv", "parcelRequire3c64")
+},{"hover.css/css/hover-min.css":"32xVj"}],"32xVj":[function() {},{}]},["gl6Mp","8lRBv"], "8lRBv", "parcelRequire3c64")
 
 //# sourceMappingURL=index.59a40e7a.js.map

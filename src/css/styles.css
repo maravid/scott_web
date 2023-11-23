@@ -10,7 +10,6 @@ body {
     height: 100vh;
     background-color: var(--background);
     color: white;
-    
 }
 
 /*** index.html ***/
@@ -35,7 +34,7 @@ p.o-text {
     text-align: left;
 }
 
-.o-background { background-color: var(--primary-color); height: 129px; }
+.o-background { height: 129px; }
 
 .o-header { display: inline-block; }
 .o-title {
@@ -52,11 +51,63 @@ p.o-text {
 
 .o-page .o-figure figcaption { text-align: center; padding: 15px 0; }
 
-@media (max-width: 699px) {
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.custom-controls {
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+}
+
+.custom-controls button, .custom-controls input {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.custom-controls input[type="range"] {
+    width: 100px;
+}
+
+.custom-controls span {
+    color: white;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+@media (max-width: 1023px) {
     .o-page {
         width: 90%;
     }
+    .o-layout_item p { 
+        line-height: 1.2;
+    }
+    html { font-size: 1.2vw; }
+    .o-page .o-figure figcaption { font-size: 15px; }
 }
+
+@media (max-width: 699px) {
+    .o-page .o-figure {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
 
 /*** enlaces.html ***/
 
@@ -91,7 +142,7 @@ p.o-text {
 
 /*** categorias.html ***/
 
-#categories, #links { width: 90%; }
+#categories, #links, #detail { width: 90%; }
 
 #categories section { padding: 0 0 30px; }
 
@@ -161,7 +212,7 @@ section#voices .v-container {
     .e-container {
       grid-template-columns: 100%;
     }
-  }
+}
 
 .f-container, .f-item {
     display: grid;
@@ -171,3 +222,100 @@ section#voices .v-container {
 .f-thumbnail { width: 250px; }
 .f-thumbnail img { width: 100%; }
 
+ .episode a { text-decoration: none; color: #fff; }
+ .episode .e-runtime a, .episode .e-synopsis a { text-decoration: none; color: var(--third-color); }
+ .episode a:hover { text-decoration: none; color: var(--secondary-color); }
+ .episode .e-synopsis a:hover { text-decoration: none; color: var(--primary-color); }
+
+
+
+/*** detalle.html ***/
+
+#detail .details-info {
+    display: grid;
+    grid-template-columns: 50% 50%;  place-items: center;
+}
+
+#detail h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.details-image-top img { width: 100%; }
+.details-image-top figcaption { padding: 5px 0 20px; text-align: center; font-size: 1.25em; }
+
+.details-container { margin-left: 20px; }
+.title-year { font-size: 30px; margin: 10px 0; display: block; color: var(--third-color); }
+.title-info { font-size: 20px; margin: 10px 0; color: var(--primary-color); }
+.title-data-info { padding: 25px 0; font-size: 16px; }
+.title-data { color: var(--primary-color); }
+
+#detail-text .detail-data { font-size: 1.15em; padding: 10px 0; line-height: 1.1; }
+
+
+@media (max-width: 999px) {
+    #detail .details-info  {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+i.fa-play { font-size: 0.75em; margin-left: 3px; }
+
+.actor-list dd {
+    display: none;
+    margin-left: 0;
+    opacity: 0; 
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+  
+.actor-list dt { cursor: pointer; margin: 10px 0 0; }
+.actor-list dt:hover { color: var(--secondary-color); }
+  
+.actor-list dt.active + dd {
+    display: block;
+    opacity: 1; 
+    max-height: 100px;
+}
+
+.marked-actor { color: var(--secondary-color); }
+
+
+/*** presentación.html ***/
+
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .character-card {
+    width: 150px;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .character-card img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .character-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--secondary-color);
+  }
+  
+hgroup h2 { color: var(--primary-color); margin: 0 0 5px; line-height: 1 !important; }
+hgroup p { color: var(--third-color); font-size: 16px; }
+
+#info-media-plot > p { margin: 15px 0 0; }
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}

@@ -5,6 +5,7 @@
 
     <title>Scott Pilgrim da el salto</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
@@ -17,7 +18,7 @@
       
       <div class="o-layout">
           <div class="o-layout_item o-header">
-            <img src="../img/hero.jpg" alt="">       
+            <img src="../img/hero.jpg" alt="Scott Pilgrim vs the world">       
           </div>
           <div class="o-layout_item o-header">
             <p class="o-text">
@@ -31,20 +32,30 @@
           </div>
 
           <div class="o-layout_item o-header">
-            <p>Bienvenido a la nueva aventura de Scott Pilgrim...</p>
+            <p>¡...Bienvenido a la nueva aventura de Scott Pilgrim!</p>
           </div>
           <div class="o-layout_item o-header o-background">
-            
+            <img src="../img/hero2.jpg" alt="Scott Pilgrim - El cómic"> 
           </div>
 
           <div class="o-title">
             <h1>¡Scott Pilgrim da el salto!</h1>
           </div>
 
-          <figure class="o-figure">
-            <video width="540" poster="../img/video_poster.png" controls>
+          <figure class="o-figure video-container">
+            <video width="540" poster="../img/video_poster.png" id="myVideo">
               <source src="../video/trailer.mp4">
             </video>
+
+            <div class="custom-controls">
+              <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+              <input class="seek-bar" type="range" min="0" value="0">
+              <button class="mute-btn"><i class="fas fa-volume-up"></i></button>
+              <input class="volume-bar" type="range" min="0" max="1" step="0.1" value="1">
+              <span class="current-time">00:00</span> / <span class="duration">00:00</span>
+              <button class="fullscreen-btn"><i class="fas fa-expand"></i></button>
+            </div>
+
             <figcaption>¡Disfruta del tráiler de la serie de animación!</figcaption>
           </figure>
       </div>

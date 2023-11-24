@@ -27,7 +27,7 @@ o-layout { margin: 0 auto; }
 .o-layout_item img { width: 100%; }
 .o-layout_item p { 
     font-size: 2.5rem;
-    line-height: 1.34;
+    line-height: 3.25vw;
     text-align: right;
 }
 

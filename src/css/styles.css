@@ -4,8 +4,8 @@
     text-shadow: none;
 }
 
-html { font-size: 1vw; }
-
+html { /*font-size: 1vw;*/ }
+h1 { font-size: 50px; }
 body {
     height: 100vh;
     background-color: var(--background);
@@ -97,7 +97,7 @@ p.o-text {
     .o-layout_item p { 
         line-height: 1.2;
     }
-    html { font-size: 1.2vw; }
+    html { font-size: 1.25vw; }
     .o-page .o-figure figcaption { font-size: 15px; }
 }
 
@@ -139,10 +139,17 @@ p.o-text {
 
 .l-text { display: inline-block; width: 75%; }
 
+@media (max-width: 999px) {
+    #links a, #links p {
+        font-size: 14px;
+    }
+}
+
+
 
 /*** categorias.html ***/
 
-#categories, #links, #detail { width: 90%; }
+#categories, #links, #detail { width: 90%; margin: 0 auto; }
 
 #categories section { padding: 0 0 30px; }
 
@@ -192,8 +199,7 @@ p.o-text {
 }
 
 section#voices .v-container {
-    display: grid;
-    grid-template-columns: 25% 75%;
+    font-size: 16px;
 }
 
 @media (max-width: 1439px) {
@@ -250,14 +256,18 @@ section#voices .v-container {
 .title-data-info { padding: 25px 0; font-size: 16px; }
 .title-data { color: var(--primary-color); }
 
-#detail-text .detail-data { font-size: 1.15em; padding: 10px 0; line-height: 1.1; }
+#detail-text .detail-data { font-size: 16px; padding: 10px 0; line-height: 1.1; }
 
+cite::before { content: open-quote; }
+cite::after { content: close-quote; }
 
 @media (max-width: 999px) {
     #detail .details-info  {
         display: grid;
         grid-template-columns: 100%;
     }
+
+    #detail-text .detail-data { font-size: 12px; }
 }
 
 i.fa-play { font-size: 0.75em; margin-left: 3px; }
@@ -289,6 +299,7 @@ i.fa-play { font-size: 0.75em; margin-left: 3px; }
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
   
   .character-card {
@@ -309,7 +320,7 @@ i.fa-play { font-size: 0.75em; margin-left: 3px; }
   }
   
 hgroup h2 { color: var(--primary-color); margin: 0 0 5px; line-height: 1 !important; }
-hgroup p { color: var(--third-color); font-size: 16px; }
+hgroup p { color: var(--third-color); font-size: 18px; }
 
 #info-media-plot > p { margin: 15px 0 0; }
 
@@ -317,5 +328,16 @@ hgroup p { color: var(--third-color); font-size: 16px; }
     display: flex;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0;    
+}
+
+div.text p { margin: 0 0 20px 20px; }
+
+@media  (max-width: 999px) {    
+    .p-page p { font-size: 12px; }
+    .p-page hgroup > p { font-size: 16px; }
+}
+
+@media  (max-width: 999px) {    
+    dl dt, dl dd { font-size: 13px; }
 }

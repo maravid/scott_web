@@ -1,6 +1,6 @@
 import 'hover.css/css/hover-min.css';
 
-/** detalle.html **/
+/** Interacción en detalle.html **/
 
 const actorTerms = document.querySelectorAll('.actor-list dt');
 actorTerms.forEach(name => {
@@ -11,7 +11,8 @@ actorTerms.forEach(name => {
 });
 
 
-/** Controles de vídeo personalizados **/
+/** Controles de vídeo personalizados en index.html **/
+
 const video = document.getElementById('myVideo');
 const playPauseBtn = document.querySelector('.play-pause-btn');
 const muteBtn = document.querySelector('.mute-btn');
@@ -19,6 +20,7 @@ const volumeBar = document.querySelector('.volume-bar');
 const seekBar = document.querySelector('.seek-bar');
 const currentTime = document.querySelector('.current-time');
 const duration = document.querySelector('.duration');
+const fullscreenBtn = document.querySelector('.fullscreen-btn');
 
 playPauseBtn.addEventListener('click', function() {
   if (video.paused || video.ended) {
@@ -72,4 +74,15 @@ function formatTime(time) {
   return `${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;
 }
 
+fullscreenBtn.addEventListener('click', () => {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  } else if (video.webkitRequestFullscreen) { 
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
+  }
+});
 

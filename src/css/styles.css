@@ -347,3 +347,27 @@ div.text p { margin: 0 0 20px 20px; }
 @media  (max-width: 999px) {    
     dl dt, dl dd { font-size: 13px; }
 }
+
+@keyframes latido {
+    0% { transform: scale(0.85); }
+    70% { transform: scale(1); }
+    100% { transform: scale(0.85); }
+}
+
+#corazon { fill: #ED1F24; }
+
+#corazon {
+    fill: #ED1F24;
+    animation: latido 1s linear infinite;
+    transform-origin: center;
+}
+
+#corazon-container {     
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+svg { border: none; }
+
+#consola { width: 90%; margin: 0 auto;}

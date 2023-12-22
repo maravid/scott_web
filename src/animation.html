@@ -1,0 +1,33 @@
+<style>
+    @keyframes latido {
+        0% { transform: scale(0.85); }
+        70% { transform: scale(1); }
+        100% { transform: scale(0.85); }
+    }
+
+    #corazon { fill: #ED1F24; }
+
+    #corazon {
+        fill: #ED1F24;
+        animation: latido 1s linear infinite;
+        transform-origin: center;
+    }
+
+    #corazon-container {     
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+    }
+
+    svg { border: none; }
+
+    #consola { width: 90%; margin: 0 auto;}
+</style>
+
+<div id="corazon-container">
+    <svg width="25" height="25" viewBox="0 0 800 800">
+        <path id="corazon" d="M282.574 554.137c73.5-73.181 241.5-231.145 274.5-336.453c5.802-18.514 31.281-128.792-31-178.49 c-85-67.826-214-48.192-243.5
+        63.364l2 1.822c-29.5-111.556-158.5-131.19-243.5-63.364c-62.281 49.698-36.802
+        159.976-31 178.5 c33 105.3 201 263.3 274.5 336.5"></path>
+    </svg>
+</div>

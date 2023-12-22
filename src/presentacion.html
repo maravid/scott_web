@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <script type="module" src="./js/app.js"></script>
   </head>
@@ -27,7 +32,7 @@
 
         <div class="container">
           <figure class="image">
-            <img src="../img/author.jpg" alt="Bryan Lee O'Malley">
+            <img src="../img/author.avif" alt="Bryan Lee O'Malley">
           </figure>
           <div class="text">
             <p> Bryan Lee O'Malley es un aclamado autor y dibujante de cómics canadiense mejor conocido por crear la serie de cómics <cite>Scott Pilgrim</cite>. Nacido en Londres, Ontario, O'Malley desarrolló un interés temprano por el dibujo y la narrativa visual, lo que lo llevó a estudiar cine en la Universidad de Western Ontario.</p>
@@ -76,41 +81,68 @@
 
         <div class="character-container">
           <div class="character-card">
-            <img src="../img/icon2.png" alt="Scott Pilgrim">
+            <img srcset="../img/icon2-2.png 599w, ../img/icon2-1.png 1023w, ../img/icon2.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon2.png" alt="Scott Pilgrim">
             <h3>Scott Pilgrim</h3>
             <p>Scott es el protagonista de la historia. Es un joven de 23 años que vive en Toronto y toca el bajo en una banda llamada <cite>Sex Bob-omb</cite>. A lo largo de la serie, se muestra como alguien despreocupado y un poco ingenuo, pero también tiene un corazón bondadoso y valora profundamente a sus amigos.</p>
           </div>
       
           <div class="character-card">
-            <img src="../img/icon3.png" alt="Ramona Flowers">
+            <img srcset="../img/icon3-2.png 599w, ../img/icon3-1.png 1023w, ../img/icon3.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon3.png" alt="Ramona Flowers">
             <h3>Ramona Flowers</h3>
             <p>Mensajera independiente con un pasado misterioso y tiene un estilo único y ecléctico. A lo largo de la historia, se revelan aspectos de su pasado que la hacen compleja y desafiante, pero a la vez, alguien por quien Scott está dispuesto a luchar y crecer como persona.</p>
           </div>
       
           <div class="character-card">
-            <img src="../img/icon1.png" alt="Kim Pine">
+            <img srcset="../img/icon1-2.png 599w, ../img/icon1-1.png 1023w, ../img/icon1.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon1.png" alt="Kim Pine">
             <h3>Kim Pine</h3>
             <p>Kim es la batería de <cite>Sex Bob-omb</cite> y una amiga de la infancia de Scott. Tiene una personalidad reservada y sarcástica, pero también muestra un gran apoyo y lealtad hacia Scott a lo largo de la historia.</p>
           </div>
 
           <div class="character-card">
-            <img src="../img/icon5.png" alt="Knives Chau">
+            <img srcset="../img/icon5-2.png 599w, ../img/icon5-1.png 1023w, ../img/icon5.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon5.png" alt="Knives Chau">
             <h3>Knives Chau</h3>
             <p>Knives es la joven y entusiasta ex-novia de Scott. Estudiante de secundaria con una actitud animada y está profundamente enamorada de Scott. A medida que avanza la historia, experimenta su propio crecimiento y evolución personal.</p>
           </div>
 
           <div class="character-card">
-            <img src="../img/icon4.png" alt="Stephen Stills">
+            <img srcset="../img/icon4-2.png 599w, ../img/icon4-1.png 1023w, ../img/icon4.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon4.png" alt="Stephen Stills">
             <h3>Stephen Stills</h3>
             <p>Stephen es el guitarrista y vocalista principal de <cite>Sex Bob-omb</cite>, la banda de Scott. Es un músico con talento y un amigo cercano de Scott. A menudo actúa como una figura racional y comprensiva dentro del grupo.</p>
           </div>
 
           <div class="character-card">
-            <img src="../img/icon6.png" alt="Wallace Wells">
+            <img srcset="../img/icon6-2.png 599w, ../img/icon6-1.png 1023w, ../img/icon6.png 1439w"
+            sizes="(max-width: 599px) 599px,
+            (max-width: 1023px) 1023px,
+            (max-width: 1023px) 1023px"
+            src="../img/icon6.png" alt="Wallace Wells">
             <h3>Wallace Wells</h3>
             <p>Wallace es el compañero de piso de Scott y su mejor amigo. Abierto y extrovertido, a menudo actúa como una figura cómica y de apoyo en la vida de Scott. Wallace también es gay y tiene una personalidad encantadora y divertida.</p>
           </div>
         </div>
+
+        <include src="./src/logo.html"></include>
+
       </section>
 
     </main>
